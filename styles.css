@@ -1,0 +1,63 @@
+body {
+    background: black;
+    color: white;
+    font-family: monospace;
+}
+button {
+    font-family: monospace;
+}
+#no-webcam {
+    display: none;
+    margin-bottom: 20px;
+}
+.panel {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.panel div {
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 20px;
+}
+.panel div:last-child {
+    margin-right: 0;
+}
+.panel button {
+    margin-right: 20px;
+}
+#webcam-panel {
+    display: flex;
+    align-items: center;
+}
+#webcam-box {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 160px;
+    padding: 0 !important;
+}
+#webcam {
+    height: 160px;
+    transform: scaleX(-1);
+}
+#status-box {
+    width: 160px;
+    text-align: center;
+}
+#dataset-panel, #dataset-panel > div {
+    display: flex;
+}
+#dataset-panel > div {
+    align-items: center;
+}
+#dataset-panel button {
+    width: 160px;
+}
+#train-panel {
+    display: flex;
+    align-items: center;
+    width: 230px;
+}

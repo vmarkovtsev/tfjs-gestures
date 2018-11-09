@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DevFest Aalborg 2018 - TensorFlow.js - Transfer Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="no-webcam">
+      No webcam found. <br/>
+      To use this demo, use a device with a webcam.
+    </div>
+    <div class="panel" id="webcam-panel">
+        <div id="webcam-box">
+            <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+        </div>
+        <div id="status-box">
+            <span id="status">Train me first!</span>
+        </div>
+    </div>
+    <div class="panel">
+        <div id="dataset-panel">
+            <div>
+                <button onclick="appendActionSample()">Append "action"</button>
+                <span id="action-counter">0</span>
+            </div>
+            <div>
+                <button onclick="appendIdleSample()">Append "idle"</button>
+                <span id="idle-counter">0</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="panel">
+        <div id="train-panel">
+            <button onclick="train()">Train</button>
+            <span id="loss">Loss: N/A</span>
+        </div>
+    </div>
+    <script src="tfjs.js"></script>
+    <script src="webcam.js"></script>
+    <script src="index.js"></script>
+</body>
