@@ -32,6 +32,8 @@ with open("tensorflowjs_model.pb", "wb") as fout:
     fout.write(data)
 ```
    
+http://bit.ly/2QxqGHw
+
 ```
 wget https://cdn.jsdelivr.net/npm/@tensorflow/tfjs
 ```
